@@ -13,7 +13,7 @@ targets:
     sources: QRreader
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.nyapple
+        PRODUCT_BUNDLE_IDENTIFIER: com.nyapple.qr-reader
         CURRENT_PROJECT_VERSION: 1
         MARKETING_VERSION: 0.0.1
         INFOPLIST_FILE: QRreader/Info.plist
