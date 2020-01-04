@@ -9,6 +9,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
             <connections>
+                <outlet property="caputureView" destination="sVM-Xi-Fi3" id="efw-0m-14r"/>
+                <outlet property="mainView" destination="tN5-e4-yDj" id="k7z-xO-VdU"/>
+                <outlet property="readButton" destination="FHo-vZ-b7S" id="iYX-ay-WUR"/>
+                <outlet property="textLavel" destination="Dht-qb-pli" id="H2Q-P9-gQ7"/>
                 <outlet property="view" destination="iN0-l3-epB" id="cbS-8v-ifk"/>
             </connections>
         </placeholder>
@@ -16,9 +20,56 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tN5-e4-yDj">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dht-qb-pli">
+                            <rect key="frame" x="207" y="448" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHo-vZ-b7S">
+                            <rect key="frame" x="20" y="50" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="vks-GR-7Id"/>
+                                <constraint firstAttribute="height" constant="50" id="yqS-uZ-rjp"/>
+                            </constraints>
+                            <state key="normal" title="Button" image="QR"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="FHo-vZ-b7S" firstAttribute="top" secondItem="tN5-e4-yDj" secondAttribute="top" constant="50" id="4ou-ZB-07k"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Dht-qb-pli" secondAttribute="trailing" constant="12" id="8kj-tA-LFa"/>
+                        <constraint firstItem="Dht-qb-pli" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tN5-e4-yDj" secondAttribute="leading" constant="12" id="9wg-rz-odQ"/>
+                        <constraint firstItem="FHo-vZ-b7S" firstAttribute="leading" secondItem="tN5-e4-yDj" secondAttribute="leading" constant="20" id="OVZ-te-ice"/>
+                        <constraint firstItem="Dht-qb-pli" firstAttribute="centerY" secondItem="tN5-e4-yDj" secondAttribute="centerY" id="PvX-R0-Xb3"/>
+                        <constraint firstItem="Dht-qb-pli" firstAttribute="centerX" secondItem="tN5-e4-yDj" secondAttribute="centerX" id="VnG-D4-9f2"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sVM-Xi-Fi3">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tN5-e4-yDj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5i8-30-wFb"/>
+                <constraint firstAttribute="bottom" secondItem="sVM-Xi-Fi3" secondAttribute="bottom" id="7wp-cy-Hlb"/>
+                <constraint firstItem="sVM-Xi-Fi3" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Aag-Ig-v8H"/>
+                <constraint firstAttribute="bottom" secondItem="tN5-e4-yDj" secondAttribute="bottom" id="J60-Tq-iFY"/>
+                <constraint firstItem="tN5-e4-yDj" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="V15-xX-YRW"/>
+                <constraint firstItem="tN5-e4-yDj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="bWZ-LU-V7H"/>
+                <constraint firstItem="sVM-Xi-Fi3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="f3z-R3-Nav"/>
+                <constraint firstItem="sVM-Xi-Fi3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="hEV-hm-4Jw"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
         </view>
     </objects>
+    <resources>
+        <image name="QR" width="159" height="160"/>
+    </resources>
 </document>

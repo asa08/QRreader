@@ -49,13 +49,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8E5B208723C115480053F1E9 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		G_2068609034219 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,7 +63,6 @@
 		G_3270746002219 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				8E5B208723C115480053F1E9 /* View */,
 				8E5B208423C109660053F1E9 /* LoginViewController.swift */,
 				8E5B208323C109660053F1E9 /* LoginViewController.xib */,
 			);
