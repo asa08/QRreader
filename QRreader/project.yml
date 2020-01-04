@@ -1,0 +1,27 @@
+name: QRreader
+settings:
+  base:
+    IPHONEOS_DEPLOYMENT_TARGET: 13.2
+fileGroups:
+ - QRreader
+configs:
+targets:
+  QRreader:
+    type: application
+    platform: iOS
+    deploymentTarget: "13.0"
+    sources: QRreader
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.nyapple
+        CURRENT_PROJECT_VERSION: 1
+        MARKETING_VERSION: 0.0.1
+        INFOPLIST_FILE: QRreader/Info.plist
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        DEVELOPMENT_TEAM: PCD3PPCG62
+        CODE_SIGN_STYLE: Automatic
+    dependencies:
+      - carthage: RxSwift
+      - carthage: RxCocoa
+      - carthage: RxRelay
+      - carthage: RxBlocking
